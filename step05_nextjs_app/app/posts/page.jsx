@@ -1,5 +1,5 @@
+import PostTemplate from "../components/posts/Post";
 import LikeButton from "../components/ui/LikeButton";
-import SearchBox from "../components/ui/LikeButton";
 
 async function PostsPage() {
   // サーバーサイドでデータフェッチ
@@ -10,6 +10,7 @@ async function PostsPage() {
         id: post.id,
         title: post.title,
         excerpt: post.body.substring(0, 100) + "...",
+        userId: post.userId,
       }))
     );
 
@@ -17,11 +18,7 @@ async function PostsPage() {
     <div>
       <h1 className="text-2xl m-4">投稿一覧</h1>
       {posts.map(post => (
-        <article key={post.id}>
-          <h2>{post.title}</h2>
-          <p>{post.excerpt}</p>
-          <LikeButton />
-        </article>
+        <PostTemplate key={post.id} {...post} />
       ))}
     </div>
   );

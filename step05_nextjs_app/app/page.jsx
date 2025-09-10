@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Card from "./components/ui/Card";
 import Modal from "./components/ui/Modal";
 import Button from "./components/ui/Button";
+import { UserProfile } from "./components/examples/GoodExample";
 
 export default function Home() {
   // 1. useState、useEffectなどのフックを最初に書く
@@ -19,11 +19,16 @@ export default function Home() {
     alert("削除されました");
     setShowModal(false);
   };
+  const user = {
+    name: "山田太郎",
+    email: "mail@example.com",
+  };
 
   // 3. return文の後に表示される内容を書く
   return (
     <div className="p-4 text-center">
       <h1 className="text-2xl m-4">トップページ</h1>
+      <UserProfile user={user} />
       <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
         <h2>確認</h2>
         <p>本当に削除しますか？</p>
