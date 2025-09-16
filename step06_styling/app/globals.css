@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.traditional-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.traditional-button:hover {
+  background-color: #2563eb;
+}
+
+.traditional-button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
