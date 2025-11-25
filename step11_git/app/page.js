@@ -14,7 +14,7 @@ export default function Home() {
             </svg>
           </div>
           <h1 className="text-5xl font-bold text-blue-900 dark:text-white mb-4">
-            Git/GitHub 基本操作の学習
+            Git/GitHub 基本操作の勉強
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             バージョン管理の基礎からGitHubでの共同開発まで
