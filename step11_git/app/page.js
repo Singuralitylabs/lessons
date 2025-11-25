@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+    <div className="min-h-screen bg-linear-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-4 py-12 max-w-4xl">
         {/* Header */}
         <header className="text-center mb-12">
@@ -103,7 +103,7 @@ export default function Home() {
                 5. コミット
               </h3>
               <code className="block bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
-                git commit -m "コミットメッセージ"
+                git commit -m &quot;コミットメッセージ&quot;
               </code>
               <p className="text-gray-700 dark:text-gray-300">
                 ステージングエリアの変更を記録します。意味のあるメッセージを付けましょう。
@@ -194,7 +194,7 @@ export default function Home() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                 1
               </div>
               <div>
@@ -208,7 +208,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold">
                 2
               </div>
               <div>
@@ -222,7 +222,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold">
                 3
               </div>
               <div>
@@ -236,7 +236,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold">
                 4
               </div>
               <div>
@@ -250,7 +250,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white font-bold">
                 5
               </div>
               <div>
@@ -264,7 +264,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="shrink-0 w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold">
                 6
               </div>
               <div>
