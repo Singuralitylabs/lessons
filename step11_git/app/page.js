@@ -5,12 +5,16 @@ export default function Home() {
         {/* Header */}
         <header className="text-center mb-12">
           <div className="inline-block p-4 bg-white dark:bg-gray-800 rounded-full shadow-lg mb-6">
-            <svg className="w-16 h-16 text-gray-800 dark:text-white" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <svg
+              className="w-16 h-16 text-gray-800 dark:text-white"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
           </div>
-          <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Git/GitHub 基本操作ガイド
+          <h1 className="text-5xl font-bold text-blue-900 dark:text-white mb-4">
+            Git/GitHub 基本操作の解説
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             バージョン管理の基礎からGitHubでの共同開発まで
@@ -19,17 +23,13 @@ export default function Home() {
 
         {/* Introduction Section */}
         <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-            🎯 Gitとは？
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">🎯 Gitとは？</h2>
           <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
             Gitは分散型バージョン管理システムで、ソースコードの変更履歴を記録し、複数人での開発を効率的に行うためのツールです。
             GitHubはGitリポジトリをクラウド上でホスティングし、コラボレーション機能を提供するプラットフォームです。
           </p>
           <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 rounded">
-            <p className="text-blue-800 dark:text-blue-200 font-semibold">
-              💡 重要なポイント
-            </p>
+            <p className="text-blue-800 dark:text-blue-200 font-semibold">💡 重要なポイント</p>
             <p className="text-blue-700 dark:text-blue-300 mt-2">
               Gitはローカルで動作し、GitHubはオンラインでの共有とコラボレーションを可能にします。
             </p>
@@ -88,8 +88,9 @@ export default function Home() {
                 4. ステージングエリアに追加
               </h3>
               <code className="block bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
-                git add filename.txt<br/>
-                git add .  # すべての変更をステージング
+                git add filename.txt
+                <br />
+                git add . # すべての変更をステージング
               </code>
               <p className="text-gray-700 dark:text-gray-300">
                 変更したファイルをコミット対象として登録します。
@@ -139,9 +140,7 @@ export default function Home() {
 
         {/* Branch Operations */}
         <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-            🌿 ブランチ操作
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">🌿 ブランチ操作</h2>
 
           <div className="space-y-6">
             <div className="border-l-4 border-teal-500 pl-4">
@@ -149,9 +148,11 @@ export default function Home() {
                 ブランチの作成と切り替え
               </h3>
               <code className="block bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
-                git branch feature-branch  # ブランチ作成<br/>
-                git checkout feature-branch  # ブランチ切り替え<br/>
-                git checkout -b new-feature  # 作成と切り替えを同時に
+                git branch feature-branch # ブランチ作成
+                <br />
+                git checkout feature-branch # ブランチ切り替え
+                <br />
+                git checkout -b new-feature # 作成と切り替えを同時に
               </code>
               <p className="text-gray-700 dark:text-gray-300">
                 ブランチを使うことで、メインの開発ラインに影響を与えずに新機能を開発できます。
@@ -163,7 +164,8 @@ export default function Home() {
                 ブランチのマージ
               </h3>
               <code className="block bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
-                git checkout main<br/>
+                git checkout main
+                <br />
                 git merge feature-branch
               </code>
               <p className="text-gray-700 dark:text-gray-300">
@@ -176,8 +178,9 @@ export default function Home() {
                 ブランチの確認と削除
               </h3>
               <code className="block bg-gray-900 text-green-400 p-4 rounded-lg mb-2 overflow-x-auto">
-                git branch  # ローカルブランチ一覧<br/>
-                git branch -d feature-branch  # ブランチ削除
+                git branch # ローカルブランチ一覧
+                <br />
+                git branch -d feature-branch # ブランチ削除
               </code>
             </div>
           </div>
@@ -313,9 +316,7 @@ export default function Home() {
 
         {/* Useful Resources */}
         <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-            📚 参考リソース
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">📚 参考リソース</h2>
 
           <div className="grid md:grid-cols-2 gap-4">
             <a
@@ -326,8 +327,12 @@ export default function Home() {
             >
               <span className="text-2xl">📖</span>
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white">GitHub公式ドキュメント</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">日本語の詳細なドキュメント</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  GitHub公式ドキュメント
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  日本語の詳細なドキュメント
+                </p>
               </div>
             </a>
 
@@ -353,7 +358,9 @@ export default function Home() {
               <span className="text-2xl">🎮</span>
               <div>
                 <h3 className="font-semibold text-gray-900 dark:text-white">Learn Git Branching</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">インタラクティブな学習ゲーム</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  インタラクティブな学習ゲーム
+                </p>
               </div>
             </a>
 
@@ -365,8 +372,12 @@ export default function Home() {
             >
               <span className="text-2xl">📝</span>
               <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white">.gitignore テンプレート</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">様々な言語・フレームワーク用</p>
+                <h3 className="font-semibold text-gray-900 dark:text-white">
+                  .gitignore テンプレート
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  様々な言語・フレームワーク用
+                </p>
               </div>
             </a>
           </div>
@@ -375,9 +386,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="mt-12 text-center text-gray-600 dark:text-gray-400">
           <p className="mb-2">Step 11: Git操作の基本 - Team Lessons</p>
-          <p className="text-sm">
-            このページで学んだコマンドを実際に試してみましょう！
-          </p>
+          <p className="text-sm">このページで学んだコマンドを実際に試してみましょう！</p>
         </footer>
       </div>
     </div>
